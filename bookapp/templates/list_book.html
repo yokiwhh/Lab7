@@ -24,11 +24,11 @@
 {% endif %}
 
 <span class="current">
-    Page {{ list_items.number }} of {{ list_items.paginator.num_pages }}.
+    page {{ list_items.number }} of {{ list_items.paginator.num_pages }}.
 </span>
 
 {% if list_items.has_next %}
-        <a href="?page={{ list_items.next_page_number }}">Next</a>
+        <a href="?page={{ list_items.next_page_number }}">next</a>
 {% endif %}
 
 </div>
