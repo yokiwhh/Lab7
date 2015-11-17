@@ -23,7 +23,6 @@ class Author(models.Model):
         verbose_name = 'author'
         verbose_name_plural = verbose_name
     Name = models.CharField('Name',max_length=60)
-    Country = models.CharField('Country',max_length=60)
 
     def __unicode__(self):
         return str(self.Name)
